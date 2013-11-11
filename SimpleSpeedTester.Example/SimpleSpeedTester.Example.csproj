@@ -37,17 +37,20 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="antlr.runtime">
-      <HintPath>..\packages\fluorinefx.1.2.3\lib\net40\antlr.runtime.dll</HintPath>
+    <Reference Include="antlr.runtime, Version=2.7.6.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\fluorinefx.1.2.4\lib\net40\antlr.runtime.dll</HintPath>
     </Reference>
     <Reference Include="Filbert">
       <HintPath>..\packages\Filbert.0.1.4617.2621\lib\net40\Filbert.dll</HintPath>
     </Reference>
-    <Reference Include="FluorineFx">
-      <HintPath>..\packages\fluorinefx.1.2.3\lib\net40\FluorineFx.dll</HintPath>
+    <Reference Include="FluorineFx, Version=1.0.0.15, Culture=neutral, PublicKeyToken=1875756ba09931ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\fluorinefx.1.2.4\lib\net40\FluorineFx.dll</HintPath>
     </Reference>
-    <Reference Include="FluorineFx.ServiceBrowser">
-      <HintPath>..\packages\fluorinefx.1.2.3\lib\net40\FluorineFx.ServiceBrowser.dll</HintPath>
+    <Reference Include="FluorineFx.ServiceBrowser, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\fluorinefx.1.2.4\lib\net40\FluorineFx.ServiceBrowser.dll</HintPath>
     </Reference>
     <Reference Include="Jayrock.Json, Version=0.9.16530.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -60,9 +63,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\JsonFx.2.0.1209.2802\lib\net40\JsonFx.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.2.0.2\lib\net40-full\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MessageShark, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
