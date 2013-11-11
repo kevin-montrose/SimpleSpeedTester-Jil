@@ -49,8 +49,9 @@
     <Reference Include="FluorineFx.ServiceBrowser">
       <HintPath>..\packages\fluorinefx.1.2.3\lib\net40\FluorineFx.ServiceBrowser.dll</HintPath>
     </Reference>
-    <Reference Include="Jayrock.Json">
-      <HintPath>..\packages\jayrock-json.0.9.12915\lib\net4\Jayrock.Json.dll</HintPath>
+    <Reference Include="Jayrock.Json, Version=0.9.16530.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\jayrock-json.0.9.16530\lib\net40\Jayrock.Json.dll</HintPath>
     </Reference>
     <Reference Include="Jil">
       <HintPath>..\packages\Jil.0.5.5\lib\net45\Jil.dll</HintPath>
