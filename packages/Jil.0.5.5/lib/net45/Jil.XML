@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jil</name>
+    </assembly>
+    <members>
+        <member name="T:Jil.DateTimeFormat">
+            <summary>
+            Specifies the format of DateTime's produced or expected by Jil.
+            </summary>
+        </member>
+        <member name="F:Jil.DateTimeFormat.NewtonsoftStyleMillisecondsSinceUnixEpoch">
+            <summary>
+            DateTimes will be formatted as "\/Date(##...##)\/" where ##...## is the 
+            number of milliseconds since the unix epoch (January 1st, 1970 UTC).
+            </summary>
+        </member>
+        <member name="F:Jil.DateTimeFormat.MillisecondsSinceUnixEpoch">
+            <summary>
+            DateTimes will be formatted as ##...##, where ##...## is the number
+            of milliseconds since the unix epoch (January 1st, 1970 UTC).
+            
+            This is format can be passed directly to JavaZcript's Date constructor.
+            </summary>
+        </member>
+        <member name="F:Jil.DateTimeFormat.SecondsSinceUnixEpoch">
+            <summary>
+            DateTimes will be formatted as ##...##, where ##...## is the number
+            of seconds since the unix epoch (January 1st, 1970 UTC).
+            </summary>
+        </member>
+        <member name="F:Jil.DateTimeFormat.ISO8601">
+            <summary>
+            DateTimes will be formatted as "yyyy-MM-ddThh:mm:ssZ" where
+            yyyy is the year, MM is the month (starting at 01), dd is the day (starting at 01),
+            hh is the hour (starting at 00, continuing to 24), mm is the minute (start at 00),
+            and ss is the second (starting at 00).
+            
+            Examples:
+                2011-07-14T19:43:37Z
+                2012-01-02T03:04:05Z
+            </summary>
+        </member>
+        <member name="T:Jil.InfiniteRecursionException">
+            <summary>
+            An exception throw when Jil suspects it's in an infinite recursive case.
+            
+            Note that this is detected heuristically, exactly how many recursions must occur
+            before it is thrown depends on the configuration and version of Jil, as well as the object being serialized.
+            </summary>
+        </member>
+        <member name="T:Jil.JSON">
+            <summary>
+            Fast JSON serializer.
+            </summary>
+        </member>
+        <member name="M:Jil.JSON.SerializeDynamic(System.Object,System.IO.TextWriter,Jil.Options)">
+            <summary>
+            Serializes the given data to the provided TextWriter.
+            
+            Pass an Options object to configure the particulars (such as whitespace, and DateTime formats) of
+            the produced JSON.  If omitted, Options.Default is used.
+            
+            Unlike Serialize, this method will inspect the Type of data to determine what serializer to invoke.
+            This is not as fast as calling Serialize with a known type.
+            
+            Note that this lookup only happens on the *root object*, members of type System.Object will not
+            be serialized via a dynamic lookup.
+            </summary>
+        </member>
+        <member name="M:Jil.JSON.SerializeDynamic(System.Object,Jil.Options)">
+            <summary>
+            Serializes the given data, returning the output as a string.
+            
+            Pass an Options object to configure the particulars (such as whitespace, and DateTime formats) of
+            the produced JSON.  If omitted, Options.Default is used.
+            
+            Unlike Serialize, this method will inspect the Type of data to determine what serializer to invoke.
+            This is not as fast as calling Serialize with a known type.
+            
+            Note that this lookup only happens on the *root object*, members of type System.Object will not
+            be serialized via a dynamic lookup.
+            </summary>
+        </member>
+        <member name="M:Jil.JSON.Serialize``1(``0,System.IO.TextWriter,Jil.Options)">
+            <summary>
+            Serializes the given data to the provided TextWriter.
+            
+            Pass an Options object to configure the particulars (such as whitespace, and DateTime formats) of
+            the produced JSON.  If omitted, Options.Default is used.
+            </summary>
+        </member>
+        <member name="M:Jil.JSON.Serialize``1(``0,Jil.Options)">
+            <summary>
+            Serializes the given data, returning the output as a string.
+            
+            Pass an Options object to configure the particulars (such as whitespace, and DateTime formats) of
+            the produced JSON.  If omitted, Options.Default is used.
+            </summary>
+        </member>
+        <member name="T:Jil.Options">
+            <summary>
+            Configuration options for Jil serialization, passed to the JSON.Serialize method.
+            </summary>
+        </member>
+    </members>
+</doc>

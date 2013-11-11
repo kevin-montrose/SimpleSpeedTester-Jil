@@ -20,6 +20,7 @@ using JsonNetBsonReader = Newtonsoft.Json.Bson.BsonReader;
 using JsonNetBsonWriter = Newtonsoft.Json.Bson.BsonWriter;
 using JsonFxReader = JsonFx.Json.JsonReader;
 using JsonFxWriter = JsonFx.Json.JsonWriter;
+using Jil;
 
 namespace SimlpeSpeedTester.Example
 {
@@ -82,6 +83,9 @@ namespace SimlpeSpeedTester.Example
 
             // speed test XamlServices
             //DoSpeedTest("XamlServices", SerializeWithXamlServices, DeserializeWithXamlServices<SimpleObject>);
+
+            // speed test Jil
+            DoSpeedTest("Jil", SerializeWithJil, DeserializeWithJil<SimpleObject>, CountAverageJsonStringPayload);
         }
 
         private static void DoSpeedTest<T>(
@@ -104,7 +108,7 @@ namespace SimlpeSpeedTester.Example
 
             Console.WriteLine("Test Group [{0}] average serialized byte array size is [{1}]", testGroupName, getAvgPayload(data));
 
-            var objects = new List<SimpleObject>();
+            /*var objects = new List<SimpleObject>();
             var deserializationTestSummary =
                 testGroup
                     .Plan("Deserialization", () => objects = deserializeFunc(data), TestRuns)
@@ -113,7 +117,7 @@ namespace SimlpeSpeedTester.Example
 
             Console.WriteLine(deserializationTestSummary);
 
-            Console.WriteLine("---------------------------------------------------------\n\n");
+            Console.WriteLine("---------------------------------------------------------\n\n");*/
         }
 
         private static SimpleObject GetSimpleObject(int id)
@@ -202,6 +206,29 @@ namespace SimlpeSpeedTester.Example
             return objects;
         }
 
+        private static List<string> SerializeWithJil<T>(List<T> objects)
+        {
+            var jsonStrings =
+                objects.Select(
+                    o =>
+                    {
+                        using (var str = new StringWriter())
+                        {
+                            JSON.Serialize(o, str);
+
+                            return str.ToString();
+                        }
+                    }
+                ).ToList();
+
+            return jsonStrings;
+        }
+
+        private static List<T> DeserializeWithJil<T>(List<string> jsonStrings)
+        {
+            throw new NotImplementedException();
+        }
+        
         private static List<byte[]> SerializeWithJsonNetBson<T>(List<T> objects)
         {
             var serializer = new JsonNetJsonSerializer();
