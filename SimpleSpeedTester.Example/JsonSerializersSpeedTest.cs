@@ -108,7 +108,7 @@ namespace SimlpeSpeedTester.Example
 
             Console.WriteLine("Test Group [{0}] average serialized byte array size is [{1}]", testGroupName, getAvgPayload(data));
 
-            /*var objects = new List<SimpleObject>();
+            var objects = new List<SimpleObject>();
             var deserializationTestSummary =
                 testGroup
                     .Plan("Deserialization", () => objects = deserializeFunc(data), TestRuns)
@@ -117,7 +117,7 @@ namespace SimlpeSpeedTester.Example
 
             Console.WriteLine(deserializationTestSummary);
 
-            Console.WriteLine("---------------------------------------------------------\n\n");*/
+            Console.WriteLine("---------------------------------------------------------\n\n");
         }
 
         private static SimpleObject GetSimpleObject(int id)
@@ -226,7 +226,16 @@ namespace SimlpeSpeedTester.Example
 
         private static List<T> DeserializeWithJil<T>(List<string> jsonStrings)
         {
-            throw new NotImplementedException();
+            return 
+                jsonStrings.Select(
+                    data =>
+                    {
+                        using (var str = new StringReader(data))
+                        {
+                            return JSON.Deserialize<T>(str);
+                        }
+                    }
+                ).ToList();
         }
         
         private static List<byte[]> SerializeWithJsonNetBson<T>(List<T> objects)
