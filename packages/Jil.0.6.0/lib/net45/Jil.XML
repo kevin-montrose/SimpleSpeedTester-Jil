@@ -98,9 +98,34 @@
             the produced JSON.  If omitted, Options.Default is used.
             </summary>
         </member>
+        <member name="M:Jil.JSON.Deserialize``1(System.IO.TextReader,Jil.Options)">
+            <summary>
+            Deserializes JSON from the given TextReader.
+            </summary>
+        </member>
         <member name="T:Jil.Options">
             <summary>
             Configuration options for Jil serialization, passed to the JSON.Serialize method.
+            </summary>
+        </member>
+        <member name="M:Jil.Options.#ctor(System.Boolean,System.Boolean,System.Boolean,Jil.DateTimeFormat,System.Boolean,System.Boolean)">
+            <summary>
+            Configuration for Jil serialization options.
+            
+            Available options:
+              prettyPrint - whether or not to include whitespace and newlines for ease of reading
+              excludeNulls - whether or not to write object members whose value is null
+              jsonp - whether or not the serialized json should be valid for use with JSONP
+              dateFormat - the style in which to serialize DateTimes
+              includeInherited - whether or not to serialize members declared by an objects base types
+              estimateOutputSize - whether or not Jil should pre-allocate a buffer when serializing to a string based on an estimate of the size of the resulting string
+            </summary>
+        </member>
+        <member name="M:Jil.Options.ToString">
+            <summary>
+            Returns a string representation of this Options object.
+            
+            The format of this may change at any time, it is only meant for debugging.
             </summary>
         </member>
     </members>
