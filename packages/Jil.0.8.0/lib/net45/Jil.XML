@@ -101,6 +101,17 @@
         <member name="M:Jil.JSON.Deserialize``1(System.IO.TextReader,Jil.Options)">
             <summary>
             Deserializes JSON from the given TextReader.
+            
+            Pass an Options object to specify the particulars (such as DateTime formats) of
+            the JSON being deserialized.  If omitted, Options.Default is used.
+            </summary>
+        </member>
+        <member name="M:Jil.JSON.Deserialize``1(System.String,Jil.Options)">
+            <summary>
+            Deserializes JSON from the given string.
+            
+            Pass an Options object to specify the particulars (such as DateTime formats) of
+            the JSON being deserialized.  If omitted, Options.Default is used.
             </summary>
         </member>
         <member name="T:Jil.Options">

@@ -1,0 +1,158 @@
+Test Group [Json.Net], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [466.505733333333] milliseconds
+Test Group [Json.Net] average serialized byte array size is [98.86932]
+Test Group [Json.Net], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [488.138866666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Json.Net BSON], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [829.935166666667] milliseconds
+Test Group [Json.Net BSON] average serialized byte array size is [144.88895]
+Test Group [Json.Net BSON], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [586.2297] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Protobuf-Net], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [104.4797] milliseconds
+Test Group [Protobuf-Net] average serialized byte array size is [51.72413]
+Test Group [Protobuf-Net], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [195.617766666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [ServiceStack.Text], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [329.538033333333] milliseconds
+Test Group [ServiceStack.Text] average serialized byte array size is [98.86932]
+Test Group [ServiceStack.Text], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [435.450433333333] milliseconds
+---------------------------------------------------------
+
+
+Test Group [DataContractJsonSerializer], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [590.739366666667] milliseconds
+Test Group [DataContractJsonSerializer] average serialized byte array size is [98.86932]
+Test Group [DataContractJsonSerializer], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1459.47616666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JavaScriptSerializer], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [2429.81056666667] milliseconds
+Test Group [JavaScriptSerializer] average serialized byte array size is [98.86932]
+Test Group [JavaScriptSerializer], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1465.55026666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [SimpleJson], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [803.451733333333] milliseconds
+Test Group [SimpleJson] average serialized byte array size is [98.86932]
+Test Group [SimpleJson], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1499.40866666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [fastJson], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [575.096833333333] milliseconds
+Test Group [fastJson] average serialized byte array size is [255.86932]
+Test Group [fastJson], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [585.652333333333] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JayRock], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [2628.7188] milliseconds
+Test Group [JayRock] average serialized byte array size is [98.86932]
+Test Group [JayRock], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [4869.6524] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JsonFx], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [882.294733333333] milliseconds
+Test Group [JsonFx] average serialized byte array size is [98.86932]
+Test Group [JsonFx], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [6510.5932] milliseconds
+---------------------------------------------------------
+
+
+Test Group [MongoDB Driver], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [457.675433333333] milliseconds
+Test Group [MongoDB Driver] average serialized byte array size is [121.86932]
+Test Group [MongoDB Driver], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [757.480433333334] milliseconds
+---------------------------------------------------------
+
+
+Test Group [MongoDB Driver BSON], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [539.0362] milliseconds
+Test Group [MongoDB Driver BSON] average serialized byte array size is [145.88895]
+Test Group [MongoDB Driver BSON], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [534.1427] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Jil], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [152.697966666667] milliseconds
+Test Group [Jil] average serialized byte array size is [98.86932]
+Test Group [Jil], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [235.728833333333] milliseconds
+---------------------------------------------------------
+
+
+all done...
+
