@@ -45,47 +45,53 @@ namespace SimlpeSpeedTester.Example
 
         public static void Start()
         {
-            // speed test Json.Net serializer
-            DoSpeedTest("Json.Net", SerializeWithJsonNet, DeserializeWithJsonNet<SimpleObject>, CountAverageJsonStringPayload);
-
-            // speed test Json.Net BSON serializer
-            DoSpeedTest("Json.Net BSON", SerializeWithJsonNetBson, DeserializeWithJsonNetBson<SimpleObject>, CountAverageByteArrayPayload);
-
-            // speed test protobuf-net
-            DoSpeedTest("Protobuf-Net", SerializeWithProtobufNet, DeserializeWithProtobufNet<SimpleObject>, CountAverageByteArrayPayload);
-
-            // speed test ServiceStack.Text Json serializer
-            DoSpeedTest("ServiceStack.Text", SerializeWithServiceStack, DeserializeWithServiceStack<SimpleObject>, CountAverageJsonStringPayload);
+            /*** JSON ***/
 
             // speed test DataContractJsonSerializer
             DoSpeedTest("DataContractJsonSerializer", SerializeWithDataContractJsonSerializer, DeserializeWithDataContractJsonSerializer<SimpleObject>, CountAverageJsonStringPayload);
 
-            // speed test JavaScriptSerializer
-            DoSpeedTest("JavaScriptSerializer", SerializeWithJavaScriptSerializer, DeserializeWithJavaScriptSerializer<SimpleObject>, CountAverageJsonStringPayload);
-
-            // speed test SimpleJson
-            DoSpeedTest("SimpleJson", SerializeWithSimpleJson, DeserializeWithSimpleJson<SimpleObject>, CountAverageJsonStringPayload);
-
             // speed test fastJson
             DoSpeedTest("fastJson", SerializeWithFastJson, DeserializeWithFastJson<SimpleObject>, CountAverageJsonStringPayload);
+
+            // speed test JavaScriptSerializer
+            DoSpeedTest("JavaScriptSerializer", SerializeWithJavaScriptSerializer, DeserializeWithJavaScriptSerializer<SimpleObject>, CountAverageJsonStringPayload);
 
             // speed test JayRock
             DoSpeedTest("JayRock", SerializeWithJayRock, DeserializeWithJayRock<SimpleObject>, CountAverageJsonStringPayload);
 
+            // speed test Jil
+            DoSpeedTest("Jil", SerializeWithJil, DeserializeWithJil<SimpleObject>, CountAverageJsonStringPayload);
+
             // speed test JsonFx
             DoSpeedTest("JsonFx", SerializeWithJsonFx, DeserializeWithJsonFx<SimpleObject>, CountAverageJsonStringPayload);
+
+            // speed test Json.Net serializer
+            DoSpeedTest("Json.Net", SerializeWithJsonNet, DeserializeWithJsonNet<SimpleObject>, CountAverageJsonStringPayload);
 
             // speed test MongoDB Driver
             DoSpeedTest("MongoDB Driver", SerializeWithMongoDbDriver, DeserializeWithMongoDbDriver<SimpleObject>, CountAverageJsonStringPayload);
 
-            // speed test MongoDB Driver
-            DoSpeedTest("MongoDB Driver BSON", SerializeWithMongoDbDriverBson, DeserializeWithMongoDbDriverBson<SimpleObject>, CountAverageByteArrayPayload);
+            // speed test ServiceStack.Text Json serializer
+            DoSpeedTest("ServiceStack.Text", SerializeWithServiceStack, DeserializeWithServiceStack<SimpleObject>, CountAverageJsonStringPayload);
 
-            // speed test Jil
-            DoSpeedTest("Jil", SerializeWithJil, DeserializeWithJil<SimpleObject>, CountAverageJsonStringPayload);
+            // speed test SimpleJson
+            DoSpeedTest("SimpleJson", SerializeWithSimpleJson, DeserializeWithSimpleJson<SimpleObject>, CountAverageJsonStringPayload);
 
             // speed test System.Web.Helpers.Json
             DoSpeedTest("System.Web.Helpers.Json", SerializeWithSystemWebHelpersJson, DeserializeWithSystemWebHelpersJson<SimpleObject>, CountAverageJsonStringPayload);
+
+            /*** BSON ***/
+
+            // speed test Json.Net BSON serializer
+            DoSpeedTest("Json.Net BSON", SerializeWithJsonNetBson, DeserializeWithJsonNetBson<SimpleObject>, CountAverageByteArrayPayload);
+
+            // speed test MongoDB Driver
+            DoSpeedTest("MongoDB Driver BSON", SerializeWithMongoDbDriverBson, DeserializeWithMongoDbDriverBson<SimpleObject>, CountAverageByteArrayPayload);
+
+            /*** PROTOCOL BUFFERS ***/
+
+            // speed test protobuf-net
+            DoSpeedTest("Protobuf-Net", SerializeWithProtobufNet, DeserializeWithProtobufNet<SimpleObject>, CountAverageByteArrayPayload);
         }
 
         private static void DoSpeedTest<T>(
