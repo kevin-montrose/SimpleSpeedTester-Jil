@@ -81,11 +81,11 @@ namespace SimlpeSpeedTester.Example
             // speed test MongoDB Driver
             DoSpeedTest("MongoDB Driver BSON", SerializeWithMongoDbDriverBson, DeserializeWithMongoDbDriverBson<SimpleObject>, CountAverageByteArrayPayload);
 
-            // speed test XamlServices
-            //DoSpeedTest("XamlServices", SerializeWithXamlServices, DeserializeWithXamlServices<SimpleObject>);
-
             // speed test Jil
             DoSpeedTest("Jil", SerializeWithJil, DeserializeWithJil<SimpleObject>, CountAverageJsonStringPayload);
+
+            // speed test System.Web.Helpers.Json
+            DoSpeedTest("System.Web.Helpers.Json", SerializeWithSystemWebHelpersJson, DeserializeWithSystemWebHelpersJson<SimpleObject>, CountAverageJsonStringPayload);
         }
 
         private static void DoSpeedTest<T>(
@@ -237,7 +237,34 @@ namespace SimlpeSpeedTester.Example
                     }
                 ).ToList();
         }
-        
+
+        private static List<string> SerializeWithSystemWebHelpersJson<T>(List<T> objects)
+        {
+            return
+                objects.Select(
+                    o => 
+                    {
+                        using(var str= new StringWriter())
+                        {
+                            System.Web.Helpers.Json.Write(o, str);
+
+                            return str.ToString();
+                        }
+                    }
+                ).ToList();
+        }
+
+        private static List<T> DeserializeWithSystemWebHelpersJson<T>(List<string> jsonStrings)
+        {
+            return
+                jsonStrings.Select(
+                    data =>
+                    {
+                        return System.Web.Helpers.Json.Decode<T>(data);
+                    }
+                ).ToList();
+        }
+
         private static List<byte[]> SerializeWithJsonNetBson<T>(List<T> objects)
         {
             var serializer = new JsonNetJsonSerializer();
