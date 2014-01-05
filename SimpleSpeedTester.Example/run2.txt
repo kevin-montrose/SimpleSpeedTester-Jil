@@ -1,0 +1,170 @@
+Test Group [DataContractJsonSerializer], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [602.092933333333] milliseconds
+Test Group [DataContractJsonSerializer] average serialized byte array size is [98.86561]
+Test Group [DataContractJsonSerializer], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1556.425] milliseconds
+---------------------------------------------------------
+
+
+Test Group [fastJson], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [527.644] milliseconds
+Test Group [fastJson] average serialized byte array size is [255.86561]
+Test Group [fastJson], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [583.980366666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JavaScriptSerializer], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [2626.1008] milliseconds
+Test Group [JavaScriptSerializer] average serialized byte array size is [98.86561]
+Test Group [JavaScriptSerializer], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1564.1842] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JayRock], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [2687.9757] milliseconds
+Test Group [JayRock] average serialized byte array size is [98.86561]
+Test Group [JayRock], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [5037.84936666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Jil], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [158.386433333333] milliseconds
+Test Group [Jil] average serialized byte array size is [98.86561]
+Test Group [Jil], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [218.716466666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [JsonFx], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [943.3269] milliseconds
+Test Group [JsonFx] average serialized byte array size is [98.86561]
+Test Group [JsonFx], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [6568.39696666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Json.Net], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [482.056533333333] milliseconds
+Test Group [Json.Net] average serialized byte array size is [98.86561]
+Test Group [Json.Net], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [537.638066666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [MongoDB Driver], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [456.6149] milliseconds
+Test Group [MongoDB Driver] average serialized byte array size is [121.86561]
+Test Group [MongoDB Driver], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [805.725666666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [ServiceStack.Text], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [308.6477] milliseconds
+Test Group [ServiceStack.Text] average serialized byte array size is [98.86561]
+Test Group [ServiceStack.Text], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [474.067033333333] milliseconds
+---------------------------------------------------------
+
+
+Test Group [SimpleJson], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [655.3533] milliseconds
+Test Group [SimpleJson] average serialized byte array size is [98.86561]
+Test Group [SimpleJson], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1561.63083333333] milliseconds
+---------------------------------------------------------
+
+
+Test Group [System.Web.Helpers.Json], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [2933.17486666667] milliseconds
+Test Group [System.Web.Helpers.Json] average serialized byte array size is [98.86561]
+Test Group [System.Web.Helpers.Json], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [1608.56726666667] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Json.Net BSON], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [856.098266666667] milliseconds
+Test Group [Json.Net BSON] average serialized byte array size is [144.88895]
+Test Group [Json.Net BSON], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [635.135533333333] milliseconds
+---------------------------------------------------------
+
+
+Test Group [MongoDB Driver BSON], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [562.8801] milliseconds
+Test Group [MongoDB Driver BSON] average serialized byte array size is [145.88895]
+Test Group [MongoDB Driver BSON], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [571.1158] milliseconds
+---------------------------------------------------------
+
+
+Test Group [Protobuf-Net], Test [Serialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [109.4777] milliseconds
+Test Group [Protobuf-Net] average serialized byte array size is [51.72355]
+Test Group [Protobuf-Net], Test [Deserialization] results summary:
+Successes   [5]
+Failures    [0] 
+Average Exec Time [206.825166666667] milliseconds
+---------------------------------------------------------
+
+
+all done...
+

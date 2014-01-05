@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Jil</id>
-    <version>0.8.0</version>
+    <version>0.9.0</version>
     <authors>Kevin Montrose</authors>
     <owners>Kevin Montrose</owners>
     <licenseUrl>https://github.com/kevin-montrose/Jil/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/kevin-montrose/Jil</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A fast JSON serializer and deserializer.</description>
-    <releaseNotes>Reducing allocations in the march towards "fast enough for release".</releaseNotes>
+    <releaseNotes>More speed gains in deserialization, this time around reading object member names.</releaseNotes>
     <copyright>Copyright (c) 2013 - 2014 Kevin Montrose</copyright>
     <tags>json</tags>
     <dependencies>
-      <dependency id="Sigil" version="4.0.1" />
+      <dependency id="Sigil" version="4.0.2" />
     </dependencies>
   </metadata>
 </package>
